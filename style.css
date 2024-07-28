@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('images/image-header.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 13px;
+}
+.header-nav{
+    display: flex;
+    justify-content:space-between ;
+    padding: 3% 3%;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 15%;
+}
+header,.header-nav nav a{
+    color: white;
+}
+nav a{
+    text-decoration: none;
+}
+header .header-nav nav ul li:nth-child(4) a {
+    background-color: white;
+    color: #23303e;
+    padding: 12%;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+.header-title{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.container{
+    text-align: center;
+    font-size: 12rem;
+}
+main{
+    font-family: "Barlow", sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper-text{
+    padding: 14%;
+    width: 50%;
+}
+.wrapper-image{
+    width: 50%;
+}
+.wrapper-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.wrapper-title,.wrapper-content{
+    margin-bottom: 7%;
+}
+.wrapper-text a{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    color: black;
+}
+.wrapper-text{
+    flex: 1;
+}
+.bg-img-1{
+    background-image: url('images/image-graphic-design.jpg');
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-2{
+    background-image: url('images/image-photography.jpg');
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    margin-top: 60%;
+    text-align: center;
+}
+.card h2{
+    margin-bottom: 2%;
+}
+.card p{
+    width: 70%;
+    margin: auto;
+}
+.customer{
+    margin-bottom: 10%;
+}
+.customer h3{
+    color: #a7a6a4;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.customer-card{
+    display: flex;
+    justify-content: space-around;
+}
+.customer-content{
+    width: 20%;
+}
+.customer-content {
+    text-align: center;
+}
+.customer-content img {
+    display: inline-block;
+    border-radius: 100%; 
+    width: 30%;
+}
+.text-bold{
+    font-weight: bold;
+}
+.customer-description{
+    margin-top: 12%;
+}
+.text-gray{
+    color: #a7a6a4;
+}
+.image-container{
+    display: flex;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+footer{
+    background-color: #90d4c5
+}
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #2a7562;
+    font-weight: bold;
+    font-size: 17px;
+   
+}
+.footer-link li{
+    list-style-type: none;
+}
+.footer-social a {
+    margin-right: 2%; 
+}
+.menu-bars{
+    width: 1rem;
+}
+.display-on-mobile{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    header{
+        padding: 5% 2%;
+    }
+    header nav{
+        justify-content: flex-end;
+    }
+    .display-on-mobile{
+        display: block;
+    }
+    .menu-bars{
+        cursor: pointer;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    header{
+        background-size: cover; 
+        background-position: center;
+    }
+    .wrapper{
+        display: block;
+    }
+    .wrapper-text{
+        width: 100%;
+    }
+    .wrapper-image{
+        width: 100%;
+    }
+    .bg-img-1,.bg-img-1{
+        background-size: cover; 
+        background-position: center;
+        height: auto;
+    }
+    .card{
+        margin-top:0%;
+        text-align: center;
+    }
+    
+    .card p{
+        width: 70%;
+        margin: auto;
+    }
+   .card-content{
+    padding-top: 60%;
+   }
+   .customer-card{
+     display: block;
+   }
+   .customer-content{
+     width: 100%;
+   }
+   .bg-img-1,.bg-img-2{
+        height: 50vh;
+   }
+   .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.galery {
+    width: 50%
+}
+.galery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+}
